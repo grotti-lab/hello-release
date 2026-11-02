@@ -1,0 +1,4 @@
+# How grotti releases this project (yggdrasil hosting D-049): build in the release's folder, run on 127.0.0.1:$PORT.
+build: echo "built by $(whoami)" > BUILT
+run: exec python3 app.py
+health: /healthz
